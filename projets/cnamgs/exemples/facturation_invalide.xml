@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<declaration_cnamgs version="1.0" mois="2026-13">
+  <pharmacie>
+    <code>PHA-42</code>
+    <nom>Pharmacie du Littoral</nom>
+    <ville>Libreville</ville>
+  </pharmacie>
+  <prestations>
+    <prestation>
+      <reference>PRE-1</reference>
+      <numero_assure>12345</numero_assure>
+      <code_prestation>RADIOGRAPHIE</code_prestation>
+      <date_soin>03-06-2026</date_soin>
+      <montant>-12500.00</montant>
+      <part_cnamgs>120</part_cnamgs>
+    </prestation>
+  </prestations>
+</declaration_cnamgs>

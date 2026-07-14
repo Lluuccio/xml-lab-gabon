@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<releves quartier="Akanda" mois="2026-06">
+  <client id="CL-1001">
+    <nom>Marie Nziengui</nom>
+    <adresse>Avorbam, Libreville</adresse>
+    <tarif>DOMESTIQUE</tarif>
+    <mode_facturation>CLASSIQUE</mode_facturation>
+    <index_debut>12450</index_debut>
+    <index_fin>12685</index_fin>
+  </client>
+  <client id="CL-1002">
+    <nom>Association Espoir</nom>
+    <adresse>Glass, Libreville</adresse>
+    <tarif>SOCIAL</tarif>
+    <mode_facturation>EDAN</mode_facturation>
+    <index_debut>830</index_debut>
+    <index_fin>872</index_fin>
+  </client>
+  <client id="CL-1003">
+    <nom>Atelier Mbolo</nom>
+    <adresse>Nzeng-Ayong, Libreville</adresse>
+    <tarif>PROFESSIONNEL</tarif>
+    <mode_facturation>CLASSIQUE</mode_facturation>
+    <index_debut>15600</index_debut>
+    <index_fin>16040</index_fin>
+  </client>
+</releves>

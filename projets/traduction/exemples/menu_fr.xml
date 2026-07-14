@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application nom="Portail citoyen">
+  <menu>
+    <item id="home">Accueil</item>
+    <item id="services">Services</item>
+    <item id="documents">Mes documents</item>
+    <item id="help">Aide</item>
+  </menu>
+  <messages>
+    <message id="welcome">Bienvenue sur le portail citoyen</message>
+    <message id="logout">Déconnexion réussie</message>
+  </messages>
+</application>

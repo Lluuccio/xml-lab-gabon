@@ -1,0 +1,74 @@
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facture SEEG - Marie Nziengui</title>
+<style>
+          body { margin: 0; color: #102a43; background: #f5f8fa; font: 15px Arial, sans-serif; }
+          .invoice { max-width: 860px; margin: 36px auto; overflow: hidden; background: #fff; box-shadow: 0 12px 30px #d9e2ec; }
+          header { display: flex; justify-content: space-between; padding: 34px 40px; color: #fff; background: #05616c; }
+          .brand { font-weight: bold; font-size: 26px; letter-spacing: -1px; }.brand small { display: block; margin-top: 5px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
+          .reference { text-align: right; font-size: 12px; line-height: 1.8; }.reference strong { display: block; font-size: 18px; }
+          .content { padding: 32px 40px 40px; }.meta { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 30px; }.label { margin-bottom: 6px; color: #627d98; font-size: 10px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }.meta p { margin: 0; line-height: 1.6; }
+          .consumption { display: flex; gap: 15px; margin-bottom: 26px; padding: 16px; border-left: 4px solid #f6ae2d; background: #fff8e9; }.consumption b { color: #05616c; font-size: 22px; }.consumption span { color: #486581; font-size: 12px; }
+          table { width: 100%; border-collapse: collapse; font-size: 13px; } th { padding: 10px; color: #627d98; border-bottom: 1px solid #d9e2ec; text-align: left; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; } td { padding: 11px 10px; border-bottom: 1px solid #edf2f7; } td:last-child, th:last-child { text-align: right; }
+          .totals { width: 310px; margin: 26px 0 0 auto; }.total-line { display: flex; justify-content: space-between; padding: 7px 0; font-size: 13px; }.grand-total { margin-top: 7px; padding-top: 13px; border-top: 2px solid #05616c; color: #05616c; font-size: 18px; font-weight: bold; }.note { margin-top: 35px; padding-top: 16px; border-top: 1px solid #d9e2ec; color: #627d98; font-size: 11px; line-height: 1.6; }
+        </style>
+</head>
+<body><article class="invoice"><header><div class="brand">SEEG<small>Facture de démonstration</small>
+</div>
+<div class="reference">
+<strong>SEEG-2026-06-CL-1001</strong><span>Période : 2026-06</span>
+</div></header><main class="content"><section class="meta"><div>
+<div class="label">Client</div>
+<p><strong>Marie Nziengui</strong><br>Avorbam, Libreville</p>
+</div>
+<div>
+<div class="label">Contrat</div>
+<p>Client : CL-1001<br>Tarif : DOMESTIQUE<br>Mode : CLASSIQUE</p>
+</div></section><section class="consumption"><div>
+<b>235 kWh</b><br><span>Consommation de la période</span>
+</div>
+<div>
+<b>12450 → 12685</b><br><span>Index compteur</span>
+</div></section><table>
+<thead><tr>
+<th>Détail de consommation</th>
+<th>Volume</th>
+<th>Prix unitaire</th>
+<th>Montant</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Tranche 1 (jusqu'à 100 kWh)</td>
+<td>100 kWh</td>
+<td>70 FCFA</td>
+<td>7 000 FCFA</td>
+</tr>
+<tr>
+<td>Tranche 2 (jusqu'à 150 kWh)</td>
+<td>135 kWh</td>
+<td>95 FCFA</td>
+<td>12 825 FCFA</td>
+</tr>
+<tr>
+<td>Frais de service</td>
+<td>-</td>
+<td>-</td>
+<td>1 000 FCFA</td>
+</tr>
+</tbody>
+</table>
+<section class="totals"><div class="total-line">
+<span>Total hors taxes</span><strong>20 825 FCFA</strong>
+</div>
+<div class="total-line">
+<span>TVA (18.00 %)</span><strong>3 749 FCFA</strong>
+</div>
+<div class="total-line">
+<span>Contribution ordures (2.00 %)</span><strong>417 FCFA</strong>
+</div>
+<div class="total-line grand-total">
+<span>Total TTC</span><span>24 991 FCFA</span>
+</div></section><p class="note">Document pédagogique. Les tarifs, frais et taux sont des paramètres d'exercice et ne constituent pas une facture officielle.</p></main></article></body>
+</html>

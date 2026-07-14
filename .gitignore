@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+.netlify/
+__pycache__/
+*.py[cod]
+.venv/

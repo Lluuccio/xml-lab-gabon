@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<declaration_cnamgs version="1.0" mois="2026-06">
+  <pharmacie>
+    <code>PHA-0042</code>
+    <nom>Pharmacie du Littoral</nom>
+    <ville>Libreville</ville>
+  </pharmacie>
+  <prestations>
+    <prestation>
+      <reference>PRE-000001</reference>
+      <numero_assure>123456789</numero_assure>
+      <code_prestation>MEDICAMENT</code_prestation>
+      <date_soin>2026-06-03</date_soin>
+      <montant>12500.00</montant>
+      <part_cnamgs>80.00</part_cnamgs>
+    </prestation>
+    <prestation>
+      <reference>PRE-000002</reference>
+      <numero_assure>987654321</numero_assure>
+      <code_prestation>CONSULTATION</code_prestation>
+      <date_soin>2026-06-08</date_soin>
+      <montant>5000.00</montant>
+      <part_cnamgs>80.00</part_cnamgs>
+    </prestation>
+  </prestations>
+</declaration_cnamgs>

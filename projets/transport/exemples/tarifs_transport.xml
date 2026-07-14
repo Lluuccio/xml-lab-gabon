@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tarifs devise="FCFA" periode="2026-06" nature="donnees-pedagogiques">
+  <agence id="MAJOR" nom="Major Transport">
+    <trajet depart="Libreville" arrivee="Oyem">
+      <offre vehicule="Bus" prix="14000"/>
+      <offre vehicule="VIP" prix="22000"/>
+    </trajet>
+    <trajet depart="Libreville" arrivee="Franceville">
+      <offre vehicule="Bus" prix="19000"/>
+      <offre vehicule="VIP" prix="28000"/>
+    </trajet>
+    <trajet depart="Libreville" arrivee="Bitam">
+      <offre vehicule="Bus" prix="16000"/>
+    </trajet>
+  </agence>
+  <agence id="SUD" nom="Transporteur du Sud">
+    <trajet depart="Libreville" arrivee="Mouila">
+      <offre vehicule="Bus" prix="10000"/>
+      <offre vehicule="VIP" prix="15500"/>
+    </trajet>
+    <trajet depart="Libreville" arrivee="Franceville">
+      <offre vehicule="Bus" prix="17000"/>
+      <offre vehicule="VIP" prix="26000"/>
+    </trajet>
+  </agence>
+  <agence id="CNT" nom="Compagnie Nationale de Transport">
+    <trajet depart="Libreville" arrivee="Mouila">
+      <offre vehicule="Bus" prix="11000"/>
+    </trajet>
+    <trajet depart="Libreville" arrivee="Franceville">
+      <offre vehicule="Bus" prix="18000"/>
+      <offre vehicule="VIP" prix="25500"/>
+    </trajet>
+    <trajet depart="Libreville" arrivee="Bitam">
+      <offre vehicule="Bus" prix="15000"/>
+      <offre vehicule="VIP" prix="23500"/>
+    </trajet>
+  </agence>
+</tarifs>

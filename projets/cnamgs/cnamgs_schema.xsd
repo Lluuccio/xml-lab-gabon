@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="CodePharmacieType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="PHA-[0-9]{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MoisType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{4}-(0[1-9]|1[0-2])"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ReferencePrestationType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="PRE-[0-9]{6}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="NumeroAssureType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CodePrestationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CONSULTATION"/>
+      <xs:enumeration value="MEDICAMENT"/>
+      <xs:enumeration value="ANALYSE"/>
+      <xs:enumeration value="HOSPITALISATION"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MontantType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="9999999.99"/>
+      <xs:totalDigits value="9"/>
+      <xs:fractionDigits value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PourcentageType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="100"/>
+      <xs:fractionDigits value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="declaration_cnamgs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pharmacie">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" type="CodePharmacieType"/>
+              <xs:element name="nom" type="xs:string"/>
+              <xs:element name="ville" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="prestations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="prestation" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="reference" type="ReferencePrestationType"/>
+                    <xs:element name="numero_assure" type="NumeroAssureType"/>
+                    <xs:element name="code_prestation" type="CodePrestationType"/>
+                    <xs:element name="date_soin" type="xs:date"/>
+                    <xs:element name="montant" type="MontantType"/>
+                    <xs:element name="part_cnamgs" type="PourcentageType"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" use="required" fixed="1.0"/>
+      <xs:attribute name="mois" type="MoisType" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

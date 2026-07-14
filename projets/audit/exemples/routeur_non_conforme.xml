@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration_routeur agence="Agence Mont-Bouët" equipement="RTR-LBV-01">
+  <services>
+    <telnet enabled="true" port="23"/>
+    <ssh enabled="true" port="22" version="1"/>
+  </services>
+  <securite>
+    <chiffrement protocole="DES" bits="56"/>
+    <administration protocole="HTTP" port="80"/>
+  </securite>
+</configuration_routeur>

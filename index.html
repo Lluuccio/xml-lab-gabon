@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="XML Lab Gabon - plateforme de démonstration pour les projets XML, XSD, XPath et XSLT."
+    />
+    <title>XML Lab Gabon</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="XML Lab Gabon, accueil">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>
+          <strong>XML Lab</strong>
+          <small>Gabon</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a class="nav-link is-active" href="#accueil" data-view="accueil">Accueil</a>
+        <a class="nav-link" href="#cnamgs" data-view="cnamgs">CNAMGS</a>
+        <a class="nav-link" href="#seeg" data-view="seeg">SEEG</a>
+        <a class="nav-link" href="#traduction" data-view="traduction">Traduction</a>
+        <a class="nav-link" href="#audit" data-view="audit">Audit</a>
+        <a class="nav-link" href="#transport" data-view="transport">Transport</a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section id="accueil" class="view is-visible" data-view-panel="accueil" aria-labelledby="home-title">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Plateforme pédagogique interactive</p>
+            <h1 id="home-title">Explorez vos projets <span>XML</span> en un seul lieu.</h1>
+            <p class="hero-text">
+              Validez, analysez et transformez des données inspirées de cas concrets au Gabon.
+              Chaque atelier conserve les fichiers et concepts attendus dans le devoir.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#cnamgs" data-view-link="cnamgs">Commencer les ateliers</a>
+              <a class="button button-ghost" href="#projets">Voir les 5 projets</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-label="Aperçu d'un document XML">
+            <div class="window-bar"><i></i><i></i><i></i><span>donnees.xml</span></div>
+            <pre><code><span class="token-tag">&lt;atelier</span> <span class="token-attr">nom</span>=<span class="token-string">"XML Lab"</span><span class="token-tag">&gt;</span>
+  <span class="token-tag">&lt;projet</span> <span class="token-attr">id</span>=<span class="token-string">"01"</span><span class="token-tag">&gt;</span>
+    <span class="token-tag">&lt;statut&gt;</span>prêt à tester<span class="token-tag">&lt;/statut&gt;</span>
+  <span class="token-tag">&lt;/projet&gt;</span>
+<span class="token-tag">&lt;/atelier&gt;</span></code></pre>
+            <span class="code-status"><b></b> Structure valide</span>
+          </div>
+        </div>
+
+        <section id="projets" class="projects-section" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Vos espaces de travail</p>
+              <h2 id="projects-title">Cinq projets, cinq compétences.</h2>
+            </div>
+            <p>Choisissez un atelier pour voir ses données d'exemple, tester son fonctionnement et consulter les fichiers associés.</p>
+          </div>
+
+          <div class="project-grid">
+            <a class="project-card cnamgs-card" href="#cnamgs" data-view-link="cnamgs">
+              <span class="project-number">01</span>
+              <span class="project-icon" aria-hidden="true">✓</span>
+              <h3>Validateur CNAMGS</h3>
+              <p>XML, XSD et rapport de conformité.</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="project-card seeg-card" href="#seeg" data-view-link="seeg">
+              <span class="project-number">02</span>
+              <span class="project-icon" aria-hidden="true">ϟ</span>
+              <h3>Facturation SEEG</h3>
+              <p>XPath, XSLT et calcul des taxes.</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="project-card translation-card" href="#traduction" data-view-link="traduction">
+              <span class="project-number">03</span>
+              <span class="project-icon" aria-hidden="true">文</span>
+              <h3>Menus locaux</h3>
+              <p>Parsing DOM et ressources linguistiques.</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="project-card audit-card" href="#audit" data-view-link="audit">
+              <span class="project-number">04</span>
+              <span class="project-icon" aria-hidden="true">⌁</span>
+              <h3>Audit routeur</h3>
+              <p>XPath et règles de sécurité réseau.</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="project-card transport-card" href="#transport" data-view-link="transport">
+              <span class="project-number">05</span>
+              <span class="project-icon" aria-hidden="true">↝</span>
+              <h3>Tarifs transport</h3>
+              <p>Extraction XML et statistiques en direct.</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <section id="cnamgs" class="view workspace-view" data-view-panel="cnamgs" aria-labelledby="cnamgs-title" hidden>
+        <div class="workspace-intro">
+          <p class="eyebrow">Projet 01 · XML + XSD</p>
+          <h1 id="cnamgs-title">Validateur de fichiers CNAMGS</h1>
+          <p>Vérifiez la structure d'un fichier de facturation avant son envoi à la CNAMGS.</p>
+        </div>
+        <div class="workbench cnamgs-workbench">
+          <aside class="workbench-side">
+            <div class="side-card side-card-accent">
+              <span class="side-icon" aria-hidden="true">✓</span>
+              <h2>Contrôle avant envoi</h2>
+              <p>Le schéma exige une structure précise et des valeurs au bon format.</p>
+            </div>
+            <div class="side-card rules-card">
+              <h2>Règles contrôlées</h2>
+              <ul>
+                <li>Code pharmacie : <code>PHA-0000</code></li>
+                <li>Assuré : exactement 9 chiffres</li>
+                <li>Prestation autorisée</li>
+                <li>Date et montants valides</li>
+                <li>Prise en charge de 0 à 100 %</li>
+              </ul>
+            </div>
+            <a class="file-link" href="projets/cnamgs/cnamgs_schema.xsd" target="_blank" rel="noopener">Consulter le schéma XSD <span aria-hidden="true">↗</span></a>
+          </aside>
+
+          <div class="validator-panel">
+            <div class="validator-heading">
+              <div>
+                <p class="panel-label">Fichier XML de facturation</p>
+                <h2>Zone de validation</h2>
+              </div>
+              <span class="demo-label">Démonstration web</span>
+            </div>
+            <div class="editor-toolbar">
+              <button class="text-button" type="button" id="load-valid-xml">Exemple valide</button>
+              <button class="text-button" type="button" id="load-invalid-xml">Exemple avec erreurs</button>
+              <label class="upload-button" for="cnamgs-upload">Importer un XML</label>
+              <input id="cnamgs-upload" type="file" accept=".xml,text/xml,application/xml" hidden />
+            </div>
+            <label class="sr-only" for="cnamgs-input">Contenu du fichier XML à valider</label>
+            <textarea id="cnamgs-input" class="xml-editor" spellcheck="false" aria-describedby="cnamgs-help"><?xml version="1.0" encoding="UTF-8"?>
+<declaration_cnamgs version="1.0" mois="2026-06">
+  <pharmacie>
+    <code>PHA-0042</code>
+    <nom>Pharmacie du Littoral</nom>
+    <ville>Libreville</ville>
+  </pharmacie>
+  <prestations>
+    <prestation>
+      <reference>PRE-000001</reference>
+      <numero_assure>123456789</numero_assure>
+      <code_prestation>MEDICAMENT</code_prestation>
+      <date_soin>2026-06-03</date_soin>
+      <montant>12500.00</montant>
+      <part_cnamgs>80.00</part_cnamgs>
+    </prestation>
+  </prestations>
+</declaration_cnamgs></textarea>
+            <p id="cnamgs-help" class="editor-help">Le contrôle web reproduit les règles principales du XSD. Le script Python fourni effectue la validation XSD complète.</p>
+            <div class="validator-actions">
+              <button class="button button-primary" id="validate-cnamgs" type="button">Valider le fichier</button>
+              <button class="button button-ghost" id="clear-cnamgs-result" type="button">Effacer le rapport</button>
+            </div>
+            <div id="cnamgs-result" class="validation-result" aria-live="polite" hidden></div>
+          </div>
+        </div>
+
+        <section class="project-files" aria-labelledby="cnamgs-files-title">
+          <div>
+            <p class="eyebrow">Livrables du devoir</p>
+            <h2 id="cnamgs-files-title">Fichiers à remettre</h2>
+          </div>
+          <div class="file-list">
+            <a href="projets/cnamgs/cnamgs_schema.xsd" target="_blank" rel="noopener"><span>XSD</span><b>cnamgs_schema.xsd</b><small>Règles de validation</small></a>
+            <a href="projets/cnamgs/validate_cnamgs.py" target="_blank" rel="noopener"><span>PY</span><b>validate_cnamgs.py</b><small>Rapport avec lignes d'erreur</small></a>
+            <a href="projets/cnamgs/exemples/facturation_valide.xml" target="_blank" rel="noopener"><span>XML</span><b>facturation_valide.xml</b><small>Exemple conforme</small></a>
+          </div>
+        </section>
+      </section>
+
+      <section id="seeg" class="view workspace-view" data-view-panel="seeg" aria-labelledby="seeg-title" hidden>
+        <div class="workspace-intro">
+          <p class="eyebrow">Projet 02 · XML + XPath / XSLT</p>
+          <h1 id="seeg-title">Moteur de facturation SEEG</h1>
+          <p>Transformez des index de consommation en une facture claire, avec ses tranches et taxes.</p>
+        </div>
+        <div class="workbench seeg-workbench">
+          <aside class="workbench-side">
+            <div class="side-card side-card-electric">
+              <span class="side-icon" aria-hidden="true">ϟ</span>
+              <h2>Du relevé à la facture</h2>
+              <p>Le programme Python sélectionne un client avec XPath, calcule sa facture, puis utilise XSLT pour créer le HTML.</p>
+            </div>
+            <div class="side-card rules-card">
+              <h2>Paramètres d'exercice</h2>
+              <ul>
+                <li>Tarifs : Social, Domestique, Professionnel</li>
+                <li>Modes : Classique ou EDAN</li>
+                <li>TVA : 18 %</li>
+                <li>Contribution ordures : 2 %</li>
+              </ul>
+            </div>
+            <a class="file-link" href="projets/seeg/exemples/consommations.xml" target="_blank" rel="noopener">Consulter les relevés XML <span aria-hidden="true">↗</span></a>
+          </aside>
+
+          <div class="seeg-panel">
+            <form id="seeg-form" class="seeg-form">
+              <div class="validator-heading">
+                <div>
+                  <p class="panel-label">Simulateur de consommation</p>
+                  <h2>Préparer une facture</h2>
+                </div>
+                <label class="upload-button" for="seeg-upload">Importer un XML</label>
+                <input id="seeg-upload" type="file" accept=".xml,text/xml,application/xml" hidden />
+              </div>
+              <p id="seeg-import-status" class="editor-help">Modifiez les index ou importez un fichier XML de relevés. Le premier client trouvé sera chargé.</p>
+              <div class="seeg-fields">
+                <label>Nom du client<input id="seeg-client" type="text" value="Marie Nziengui" required /></label>
+                <label>Tarif<select id="seeg-tarif"><option value="SOCIAL">Social</option><option value="DOMESTIQUE" selected>Domestique</option><option value="PROFESSIONNEL">Professionnel</option></select></label>
+                <label>Mode<select id="seeg-mode"><option value="CLASSIQUE" selected>Classique</option><option value="EDAN">EDAN</option></select></label>
+                <label>Index initial<input id="seeg-start-index" type="number" min="0" value="12450" required /></label>
+                <label>Index final<input id="seeg-end-index" type="number" min="0" value="12685" required /></label>
+              </div>
+              <button class="button button-primary" type="submit">Calculer la facture</button>
+            </form>
+
+            <section id="seeg-invoice" class="web-invoice" aria-live="polite" aria-labelledby="seeg-invoice-title">
+              <header class="web-invoice-header"><div><strong>SEEG</strong><small>Facture de démonstration</small></div><p id="invoice-reference">SEEG-2026-06-WEB</p></header>
+              <div class="web-invoice-body">
+                <div class="invoice-meta"><div><span>Client</span><strong id="invoice-client">Marie Nziengui</strong></div><div><span>Contrat</span><strong id="invoice-contract">DOMESTIQUE · CLASSIQUE</strong></div><div><span>Consommation</span><strong><b id="invoice-consumption">235</b> kWh</strong></div></div>
+                <table class="invoice-table"><thead><tr><th>Tranche</th><th>Volume</th><th>Prix</th><th>Montant</th></tr></thead><tbody id="invoice-lines"></tbody></table>
+                <div class="invoice-totals"><p><span>Énergie + frais de service</span><strong id="invoice-ht">0 FCFA</strong></p><p><span>TVA (18 %)</span><strong id="invoice-tva">0 FCFA</strong></p><p><span>Contribution ordures (2 %)</span><strong id="invoice-om">0 FCFA</strong></p><p class="invoice-grand-total"><span>Total TTC</span><strong id="invoice-ttc">0 FCFA</strong></p></div>
+                <p class="invoice-note">Montants pédagogiques : adapte les paramètres dans le script Python si ton enseignant fournit un barème précis.</p>
+                <button id="download-seeg-invoice" class="text-button invoice-download" type="button">Télécharger l’aperçu HTML</button>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section class="project-files" aria-labelledby="seeg-files-title">
+          <div><p class="eyebrow">Livrables du devoir</p><h2 id="seeg-files-title">Fichiers à remettre</h2></div>
+          <div class="file-list">
+            <a href="projets/seeg/exemples/consommations.xml" target="_blank" rel="noopener"><span>XML</span><b>consommations.xml</b><small>Index des clients</small></a>
+            <a href="projets/seeg/generer_facture.py" target="_blank" rel="noopener"><span>PY</span><b>generer_facture.py</b><small>XPath et calcul POO</small></a>
+            <a href="projets/seeg/facture_seeg.xslt" target="_blank" rel="noopener"><span>XSLT</span><b>facture_seeg.xslt</b><small>Génération de la facture HTML</small></a>
+          </div>
+        </section>
+      </section>
+
+      <section id="traduction" class="view workspace-view" data-view-panel="traduction" aria-labelledby="translation-title" hidden>
+        <div class="workspace-intro">
+          <p class="eyebrow">Projet 03 · DOM + XML</p>
+          <h1 id="translation-title">Traducteur de menus locaux</h1>
+          <p>Créez vos propres ressources linguistiques pour les interfaces numériques.</p>
+        </div>
+        <div class="workbench translation-workbench">
+          <aside class="workbench-side">
+            <div class="side-card side-card-language">
+              <span class="side-icon" aria-hidden="true">文</span>
+              <h2>Une ressource à la fois</h2>
+              <p>Chaque texte français est remplacé par la traduction que tu renseignes, puis sauvegardé dans un nouveau XML.</p>
+            </div>
+            <div class="side-card rules-card">
+              <h2>Principe important</h2>
+              <ul>
+                <li>Aucune traduction n'est inventée</li>
+                <li>Les termes viennent d'un XML source</li>
+                <li>Les nœuds texte sont modifiés</li>
+                <li>Le résultat reste du XML valide</li>
+              </ul>
+            </div>
+            <a class="file-link" href="projets/traduction/exemples/menu_fr.xml" target="_blank" rel="noopener">Consulter le menu français <span aria-hidden="true">↗</span></a>
+          </aside>
+
+          <div class="translation-panel">
+            <div class="validator-heading">
+              <div><p class="panel-label">Éditeur de ressource XML</p><h2>Traduire les libellés</h2></div>
+              <label class="upload-button" for="translation-upload">Importer un XML</label>
+              <input id="translation-upload" type="file" accept=".xml,text/xml,application/xml" hidden />
+            </div>
+            <div class="translation-settings">
+              <label for="translation-language">Langue cible</label>
+              <input id="translation-language" type="text" value="Punu" placeholder="Ex. Fang, Punu, Myènè" />
+              <button id="reset-translations" class="text-button" type="button">Réinitialiser</button>
+            </div>
+            <p id="translation-status" class="editor-help">Renseigne les traductions validées par un locuteur, puis génère le fichier XML.</p>
+            <div id="translation-terms" class="translation-terms"></div>
+            <div class="validator-actions"><button id="generate-translation" class="button button-primary" type="button">Générer le XML traduit</button><button id="download-translation" class="button button-ghost" type="button" disabled>Télécharger le XML</button></div>
+            <div id="translation-preview-wrap" class="translation-preview" hidden><p class="panel-label">Aperçu du fichier généré</p><pre><code id="translation-preview"></code></pre></div>
+          </div>
+        </div>
+
+        <section class="project-files" aria-labelledby="translation-files-title">
+          <div><p class="eyebrow">Livrables du devoir</p><h2 id="translation-files-title">Fichiers à remettre</h2></div>
+          <div class="file-list">
+            <a href="projets/traduction/exemples/menu_fr.xml" target="_blank" rel="noopener"><span>XML</span><b>menu_fr.xml</b><small>Menu français source</small></a>
+            <a href="projets/traduction/traduire_menu.py" target="_blank" rel="noopener"><span>PY</span><b>traduire_menu.py</b><small>Parcours DOM minidom</small></a>
+            <a href="projets/traduction/README.md" target="_blank" rel="noopener"><span>DOC</span><b>README.md</b><small>Mode d'exécution</small></a>
+          </div>
+        </section>
+      </section>
+
+      <section id="audit" class="view workspace-view" data-view-panel="audit" aria-labelledby="audit-title" hidden>
+        <div class="workspace-intro">
+          <p class="eyebrow">Projet 04 · XPath + configuration XML</p>
+          <h1 id="audit-title">Audit de sécurité des routeurs</h1>
+          <p>Détectez les pratiques à risque dans une configuration XML, sans vous connecter à un équipement réel.</p>
+        </div>
+        <div class="workbench audit-workbench">
+          <aside class="workbench-side">
+            <div class="side-card side-card-security">
+              <span class="side-icon" aria-hidden="true">⌁</span>
+              <h2>Audit défensif local</h2>
+              <p>Cette démonstration lit un XML et produit un rapport. Elle n’envoie aucune commande et ne contacte aucun réseau.</p>
+            </div>
+            <div class="side-card rules-card">
+              <h2>Contrôles XPath</h2>
+              <ul>
+                <li>Telnet strictement désactivé</li>
+                <li>Chiffrement AES d’au moins 128 bits</li>
+                <li>SSH explicitement en version 2</li>
+                <li>HTTPS pour l’administration</li>
+                <li>Critère pédagogique : ports modifiés</li>
+              </ul>
+            </div>
+            <a class="file-link" href="projets/audit/exemples/routeur_non_conforme.xml" target="_blank" rel="noopener">Consulter le XML à risque <span aria-hidden="true">↗</span></a>
+          </aside>
+
+          <div class="audit-panel">
+            <div class="validator-heading"><div><p class="panel-label">Configuration XML</p><h2>Lancer l’audit</h2></div><span class="demo-label audit-label">Lecture seule</span></div>
+            <div class="editor-toolbar"><button id="load-risky-router" class="text-button" type="button">Exemple à risque</button><button id="load-secure-router" class="text-button" type="button">Exemple conforme</button><label class="upload-button" for="audit-upload">Importer un XML</label><input id="audit-upload" type="file" accept=".xml,text/xml,application/xml" hidden /></div>
+            <label class="sr-only" for="audit-input">Configuration XML à auditer</label>
+            <textarea id="audit-input" class="xml-editor audit-editor" spellcheck="false"><?xml version="1.0" encoding="UTF-8"?>
+<configuration_routeur agence="Agence Mont-Bouët" equipement="RTR-LBV-01">
+  <services>
+    <telnet enabled="true" port="23"/>
+    <ssh enabled="true" port="22" version="1"/>
+  </services>
+  <securite>
+    <chiffrement protocole="DES" bits="56"/>
+    <administration protocole="HTTP" port="80"/>
+  </securite>
+</configuration_routeur></textarea>
+            <div class="validator-actions"><button id="run-router-audit" class="button button-primary" type="button">Analyser la configuration</button><button id="clear-audit-result" class="button button-ghost" type="button">Effacer le rapport</button></div>
+            <div id="audit-result" class="audit-result" aria-live="polite" hidden></div>
+          </div>
+        </div>
+
+        <section class="project-files" aria-labelledby="audit-files-title">
+          <div><p class="eyebrow">Livrables du devoir</p><h2 id="audit-files-title">Fichiers à remettre</h2></div>
+          <div class="file-list">
+            <a href="projets/audit/exemples/routeur_non_conforme.xml" target="_blank" rel="noopener"><span>XML</span><b>routeur_non_conforme.xml</b><small>Six vulnérabilités</small></a>
+            <a href="projets/audit/exemples/routeur_conforme.xml" target="_blank" rel="noopener"><span>XML</span><b>routeur_conforme.xml</b><small>Configuration attendue</small></a>
+            <a href="projets/audit/audit_routeur.py" target="_blank" rel="noopener"><span>PY</span><b>audit_routeur.py</b><small>Analyse XPath et rapport</small></a>
+          </div>
+        </section>
+      </section>
+
+      <section id="transport" class="view workspace-view" data-view-panel="transport" aria-labelledby="transport-title" hidden>
+        <div class="workspace-intro">
+          <p class="eyebrow">Projet 05 · extraction de données XML</p>
+          <h1 id="transport-title">Analyseur de tarifs terrestres</h1>
+          <p>Comparez les offres de transport entre Libreville et les villes de l’intérieur.</p>
+        </div>
+        <div class="workbench transport-workbench">
+          <aside class="workbench-side">
+            <div class="side-card side-card-transport">
+              <span class="side-icon" aria-hidden="true">↝</span>
+              <h2>Comparer les offres</h2>
+              <p>Interrogez un fichier XML pour trouver une offre avantageuse ou calculer une moyenne de tarifs.</p>
+            </div>
+            <div class="side-card rules-card">
+              <h2>Requêtes disponibles</h2>
+              <ul>
+                <li>Trajet le moins cher</li>
+                <li>Prix moyen par trajet</li>
+                <li>Filtre Bus ou VIP</li>
+                <li>Comparaison par agence</li>
+                <li>Données pédagogiques uniquement</li>
+              </ul>
+            </div>
+            <a class="file-link" href="projets/transport/exemples/tarifs_transport.xml" target="_blank" rel="noopener">Consulter les tarifs XML <span aria-hidden="true">↗</span></a>
+          </aside>
+
+          <div class="transport-panel">
+            <div class="validator-heading"><div><p class="panel-label">Moteur de requêtes</p><h2>Explorer les tarifs</h2></div><label class="upload-button" for="transport-upload">Importer un XML</label><input id="transport-upload" type="file" accept=".xml,text/xml,application/xml" hidden /></div>
+            <p id="transport-status" class="editor-help">Données d’exemple fictives, prévues uniquement pour l’exercice.</p>
+            <form id="transport-form" class="transport-form">
+              <label>Analyse<select id="transport-operation"><option value="cheapest">Trajet le moins cher</option><option value="average">Prix moyen</option><option value="compare">Comparer les offres</option></select></label>
+              <label>Départ<select id="transport-departure"><option>Libreville</option></select></label>
+              <label>Destination<select id="transport-destination"></select></label>
+              <label>Véhicule<select id="transport-vehicle"><option value="">Tous</option><option value="Bus">Bus</option><option value="VIP">VIP</option></select></label>
+              <button class="button button-primary" type="submit">Lancer la recherche</button>
+            </form>
+            <section id="transport-results" class="transport-results" aria-live="polite"><div class="transport-summary"><span>↝</span><div><small>RÉSULTAT</small><strong>Choisissez une requête pour commencer.</strong></div></div><div class="transport-table-wrap"><table class="transport-table"><thead><tr><th>Agence</th><th>Itinéraire</th><th>Véhicule</th><th>Prix</th></tr></thead><tbody id="transport-lines"></tbody></table></div></section>
+          </div>
+        </div>
+
+        <section class="project-files" aria-labelledby="transport-files-title">
+          <div><p class="eyebrow">Livrables du devoir</p><h2 id="transport-files-title">Fichiers à remettre</h2></div>
+          <div class="file-list">
+            <a href="projets/transport/exemples/tarifs_transport.xml" target="_blank" rel="noopener"><span>XML</span><b>tarifs_transport.xml</b><small>Données des agences</small></a>
+            <a href="projets/transport/analyser_tarifs.py" target="_blank" rel="noopener"><span>PY</span><b>analyser_tarifs.py</b><small>Requêtes XPath et statistiques</small></a>
+            <a href="projets/transport/README.md" target="_blank" rel="noopener"><span>DOC</span><b>README.md</b><small>Commandes du terminal</small></a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>XML Lab Gabon</strong> · Projet pédagogique XML</p>
+      <p>XML · XSD · XPath · XSLT · Python</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

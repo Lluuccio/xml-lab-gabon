@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application nom="Portail citoyen">
+  
+  
+  <menu>
+    
+    
+    <item id="home">Terme_1</item>
+    
+    
+    <item id="services">Terme_2</item>
+    
+    
+    <item id="documents">Terme_3</item>
+    
+    
+    <item id="help">Terme_4</item>
+    
+  
+  </menu>
+  
+  
+  <messages>
+    
+    
+    <message id="welcome">Terme_5</message>
+    
+    
+    <message id="logout">Terme_6</message>
+    
+  
+  </messages>
+  
+
+</application>
