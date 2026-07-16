@@ -46,7 +46,7 @@
               <div class="total-line"><span>Contribution ordures (<xsl:value-of select="totaux/taux_om"/> %)</span><strong><xsl:value-of select="format-number(totaux/om, '# ##0', 'fcfa')"/> FCFA</strong></div>
               <div class="total-line grand-total"><span>Total TTC</span><span><xsl:value-of select="format-number(totaux/ttc, '# ##0', 'fcfa')"/> FCFA</span></div>
             </section>
-            <p class="note">Document pédagogique. Les tarifs, frais et taux sont des paramètres d'exercice et ne constituent pas une facture officielle.</p>
+            <p class="note"></p>
           </main>
         </article>
       </body>
